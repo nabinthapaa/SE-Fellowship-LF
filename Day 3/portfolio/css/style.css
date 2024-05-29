@@ -1,0 +1,46 @@
+* {
+  font-family: "Poppins", monospace, sans-serif;
+  box-sizing: border-box;
+}
+
+nav li {
+  list-style: none;
+}
+
+header a {
+  all: unset;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  gap: 4em;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1.75em;
+  background: none;
+
+  font-size: 14px;
+}
+
+.button.border {
+  border: 2px solid gray;
+  border-radius: 0.75em;
+}
+
+.hero {
+  height: 90vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}

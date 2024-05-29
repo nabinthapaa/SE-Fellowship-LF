@@ -1,0 +1,69 @@
+.container {
+  margin-inline: auto;
+  margin-top: 5rem;
+  border: 2px solid gray;
+}
+.aside-left {
+  padding: 2em;
+  border-right: 2px solid gray;
+}
+
+.image-wrapper {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  object-position: center top;
+}
+
+.top {
+  border-bottom: 2px solid gray;
+  margin-bottom: 1rem;
+}
+
+.top > * {
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: underline;
+}
+
+.skill:first-child {
+  margin-top: 1rem;
+}
+
+.skill:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+dd:not(:last-child),
+dd:not(:first-child) {
+  padding-left: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.main {
+  padding: 2em;
+}
+
+.experiences {
+  border-bottom: 2px solid gray;
+}
+
+.experiences:first-child {
+  margin-top: 1rem;
+}
+
+.experiences:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.experience dt {
+  text-decoration: underline;
+}
