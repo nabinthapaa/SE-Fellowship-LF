@@ -7,6 +7,31 @@
   font-family: "DM Sans", monospace, sans-serif;
 }
 
+body {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1.125rem;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .wrapper {
   padding: clamp(0.5em, 2vw, 2em);
 }
@@ -15,10 +40,14 @@
   display: none !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .info {
@@ -34,9 +63,13 @@ img {
 }
 
 .info .image {
-  background: #000;
+  flex-shrink: 0;
   aspect-ratio: 1;
   border-radius: 50%;
+}
+
+.info-container {
+  width: 80%;
 }
 
 .text-subtle {
@@ -53,7 +86,7 @@ img {
 
 .project-card {
   padding: 1rem;
-  width: 20rem;
+  width: 50%;
   background: #f7f9fc;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -87,10 +120,6 @@ img {
   justify-content: center;
 }
 
-.link-icon > img {
-  object-fit: contain;
-}
-
 .project-card_bottom a {
   justify-self: flex-start;
 }
@@ -112,22 +141,9 @@ img {
   font-weight: 900;
 }
 
-.actual-quote {
-  border: 1px solid red;
-  font-size: 1.25rem;
-  position: relative;
-  width: 70%;
-}
-
-.quotation,
-.quotation-inverted,
-.quote {
-  display: inline-block;
-}
-
 .container.border {
   margin-top: 1rem;
-  border-top: 2px solid #79819a;
+  border-top: 1px solid #e2e6ee;
 }
 
 .contact {
@@ -149,11 +165,51 @@ img {
   aspect-ratio: 1;
 }
 
-.contact .image img {
-  object-fit: contain;
+.container-title {
+  align-self: flex-start;
 }
 
-.container-title {
-  padding-left: 2em;
-  align-self: flex-start;
+.quote-container {
+  margin-top: 2rem;
+}
+
+.quote {
+  position: relative;
+  font-size: 1.3rem;
+  width: 80%;
+}
+
+.quote + .author {
+  text-align: left;
+  width: 80%;
+  font-size: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+.quote::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  left: -15px;
+  aspect-ratio: 1;
+  background-image: url("../assets/icons/quotation.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.quote::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  right: -15px;
+  aspect-ratio: 1;
+  background-image: url("../assets/icons/quotation-inverted.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.name + .title {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #a478e8, #516cf7);
 }

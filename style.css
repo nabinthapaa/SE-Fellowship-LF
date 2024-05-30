@@ -14,3 +14,7 @@ table {
 tr {
   border: 1px solid red;
 }
+
+.name-container {
+  text-align: center;
+}
