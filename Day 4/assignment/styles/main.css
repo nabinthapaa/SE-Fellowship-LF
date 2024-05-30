@@ -1,0 +1,223 @@
+/* TODO: Please rewrite the names in html */
+.main {
+  flex: 1;
+  padding: clamp(0.1em, 2vw, 5em);
+}
+
+.timeline-item .title {
+  margin-bottom: 1rem;
+}
+
+.no-word-wrap {
+  white-space: nowrap;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.timeline-item {
+  list-style: none;
+  position: relative;
+  padding-inline-start: 64px;
+  padding-bottom: 32px;
+}
+
+.timeline-item .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: "";
+  width: 32px;
+  aspect-ratio: 1;
+  left: 0px;
+  top: 0px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  font-size: 3em;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-item .indicator .inner-circle {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #592ea5;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: 16px;
+  background-color: #e1e4ec;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  position: relative;
+}
+
+.company .indicator {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 6px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: none;
+}
+
+.company .right {
+  width: 60%;
+  color: #79819a;
+}
+
+.company .left .top {
+  gap: 0.25rem;
+  font-size: 10px;
+}
+
+.company .left .top .location {
+  height: 10px;
+  aspect-ratio: 1;
+}
+
+.company .left .bottom {
+  gap: 1rem;
+}
+.company .left .bottom .right {
+  flex: 1;
+}
+
+.logo {
+  height: 25px;
+  aspect-ratio: 1;
+}
+
+.top .image {
+  width: 48px;
+  aspect-ratio: 1;
+}
+
+.education .top {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.education-container {
+  gap: 0.2rem;
+}
+
+.education {
+  flex: 1;
+  padding: 1rem;
+  background: #f7f9fc;
+}
+
+.education:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.education:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.project-card:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.project-card:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.tools-container .top,
+.tools-container .bottom {
+  gap: 0.5rem;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #f7f9fc;
+  flex: 1;
+}
+
+.tool .image {
+  height: 48px;
+  aspect-ratio: 1;
+}
+
+.tool .description {
+  text-align: center;
+}
+
+.skills-container > :first-child {
+  margin-bottom: 1rem;
+}
+
+.skills-container .right {
+  color: #964df5;
+  width: 82%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.skills-container .designs .right > *,
+.skills-container .development .right > * {
+  flex: 1;
+}
+
+.skills-common {
+  background: #f7f9fc;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-common * {
+  color: #964df5;
+  padding-inline: 2rem;
+}
+
+.development .skills-common * {
+  color: #5e69f5;
+}
+
+.two-content > *:first-child {
+  border-right: 2px solid #e1e4ec;
+}
+
+.three-content .flex {
+  flex-direction: column;
+}
+
+.three-content > :last-child {
+  border-left: 2px solid #eff1f4;
+}
+
+.three-content .flex :first-child {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #eff1f4;
+}

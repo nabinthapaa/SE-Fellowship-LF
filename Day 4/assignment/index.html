@@ -6,43 +6,10 @@
     <title>Resume</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
   </head>
   <body>
-    <!-- Aside card component  -->
-    <div class="info" hidden="true">
-      <div class="image">
-        <img src="assets/icons/twitter.png" alt="instagram" />
-      </div>
-      <div class="about">
-        <p class="text-subtle">Instagram</p>
-        <p class="text-bold">@chiara.designs</p>
-      </div>
-    </div>
-    <!-- Project card component -->
-    <div class="project-card" hidden="true">
-      <div class="project-card_top">
-        <div class="left">
-          <div class="project-icon">
-            <img src="assets/tools/figma.png" alt="figma" />
-          </div>
-        </div>
-        <div class="right">
-          <p class="text-bold">Powerful Design System</p>
-          <p class="text-subtle subtext">
-            Figma UI Kit and Design System targeting a wide variety of use
-            cases.
-          </p>
-        </div>
-      </div>
-      <div class="project-card_bottom">
-        <div class="link-icon">
-          <img src="assets/icons/figma.png" alt="figma icons" />
-        </div>
-        <a href="https://figma.com" target="_blank">https://figma.com</a>
-      </div>
-    </div>
-
-    <!-- Experience Card -->
     <aside class="aside">
       <div class="profile-image">
         <img src="assets/images/picture.png" alt="profile image" />
@@ -53,152 +20,570 @@
           <h2 class="title">Product Designer</h2>
         </div>
         <div class="container quote-container">
-          <div class="actual-quote">
-            <div class="quotation">
-              <img src="assets/icons/quotation.svg" alt="quotation" />
-            </div>
-            <p class="quote text-bold">
-              Design isn’t finished until somebody is using it.
-            </p>
-            <div class="quotation-inverted">
-              <img
-                src="assets/icons/quotation-inverted.svg"
-                alt="quotation-invert"
-              />
-            </div>
-          </div>
+          <p class="quote text-bold">
+            Design isn’t finished until somebody is using it.
+          </p>
           <p class="author text-subtle">Brenda Laurel</p>
         </div>
-        <div class="container border contact space-y">
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/mail.png" alt="instagram" />
+        <div class="container contact border contact space-y">
+          <div class="flex flex-col">
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/mail.png" alt="mail icon" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Email</p>
+                <a href="mailto:chiara.bianchi@gmail.com" class="text-bold"
+                  >chiara.bianchi@gmail.com</a
+                >
+              </div>
             </div>
-            <div class="about">
-              <p class="text-subtle">Email</p>
-              <a href="mailto:chiara.bianchi@gmail.com" class="text-bold"
-                >chiara.bianchi@gmail.com</a
-              >
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/link.png" alt="Link chain icon" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Website</p>
+                <a href="https://aldesign.it" class="text-bold"
+                  >https://aldesign.it</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/link.png" alt="instagram" />
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/phone.png" alt="phone icon" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Phone</p>
+                <a href="tel:+393330123765" class="text-bold"
+                  >(+39) 333 0123 765</a
+                >
+              </div>
             </div>
-            <div class="about">
-              <p class="text-subtle">Website</p>
-              <a href="https://aldesign.it" class="text-bold"
-                >https://aldesign.it</a
-              >
-            </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/phone.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-subtle">Phone</p>
-              <a href="tel:(+39) 333 0123 765" class="text-bold"
-                >(+39) 333 0123 765</a
-              >
-            </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/location.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-subtle">Address</p>
-              <p class="text-bold">@chiara.designs</p>
-            </div>
-          </div>
-        </div>
-        <div class="container border socials space-y">
-          <p class="container-title">Socials</p>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/instagram.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-subtle">Instgram</p>
-              <a href="mailto:chiara.bianchi@gmail.com" class="text-bold"
-                >@chiara.designs</a
-              >
-            </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/dribble.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-subtle">Dribble</p>
-              <a href="https://aldesign.it" class="text-bold"
-                >@chiara-designs</a
-              >
-            </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/twitter.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-subtle">Twitter</p>
-              <a href="tel:(+39) 333 0123 765" class="text-bold"
-                >@chiaradesigns</a
-              >
-            </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/icons/linkedin.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-subtle">Linkedin</p>
-              <p class="text-bold">chiara-bianchi-123</p>
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/location.png" alt="location icon" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Address</p>
+                <p class="text-bold no-word-wrap">@chiara.designs</p>
+              </div>
             </div>
           </div>
         </div>
         <div class="container border socials space-y">
-          <p class="container-title">Languages</p>
-          <div class="info">
-            <div class="image">
-              <img src="assets/flags/italy.png" alt="instagram" />
+          <p class="container-title text-subtle">Socials</p>
+          <div class="flex flex-col">
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/instagram.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Instgram</p>
+                <p class="text-bold">@chiara.designs</p>
+              </div>
             </div>
-            <div class="about">
-              <p class="text-bold">Itallian</p>
-              <p class="text-subtle">Native</p>
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/dribble.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Dribble</p>
+                <p class="text-bold no-word-wrap">@chiara-designs</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/twitter.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Twitter</p>
+                <p class="text-bold">@chiaradesigns</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="image">
+                <img src="assets/icons/linkedin.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-subtle">Linkedin</p>
+                <p class="text-bold no-word-wrap">chiara-bianchi-123</p>
+              </div>
             </div>
           </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/flags/greece.png" alt="instagram" />
+        </div>
+        <div class="container border socials space-y">
+          <p class="container-title text-subtle">Languages</p>
+          <div class="flex flex-col">
+            <div class="info">
+              <div class="image">
+                <img src="assets/flags/italy.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-bold">Itallian</p>
+                <p class="text-subtle">Native</p>
+              </div>
             </div>
-            <div class="about">
-              <p class="text-bold">Greek</p>
-              <p class="text-subtle">Native</p>
+            <div class="info">
+              <div class="image">
+                <img src="assets/flags/greece.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-bold">Greek</p>
+                <p class="text-subtle">Native</p>
+              </div>
             </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/flags/britain.png" alt="instagram" />
+            <div class="info">
+              <div class="image">
+                <img src="assets/flags/britain.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-bold">English</p>
+                <p class="text-subtle">Professional Working</p>
+              </div>
             </div>
-            <div class="about">
-              <p class="text-bold">English</p>
-              <p class="text-subtle">Professional Working</p>
-            </div>
-          </div>
-          <div class="info">
-            <div class="image">
-              <img src="assets/flags/spain.png" alt="instagram" />
-            </div>
-            <div class="about">
-              <p class="text-bold">Spanish</p>
-              <p class="text-subtle">Elementary</p>
+            <div class="info">
+              <div class="image">
+                <img src="assets/flags/spain.png" alt="instagram" />
+              </div>
+              <div class="about">
+                <p class="text-bold">Spanish</p>
+                <p class="text-subtle">Elementary</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </aside>
-    <main></main>
+    <main class="main">
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="indicator">
+            <div class="inner-circle"></div>
+          </div>
+          <div class="projects">
+            <h2 class="title">Latest Projects</h2>
+            <div class="cards-container">
+              <div class="project-card">
+                <div class="project-card_top">
+                  <div class="left">
+                    <div class="project-icon">
+                      <img src="assets/tools/figma.png" alt="figma" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="text-bold">Powerful Design System</p>
+                    <p class="text-subtle subtext">
+                      Figma UI Kit and Design System targeting a wide variety of
+                      use cases.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-card_bottom">
+                  <div class="link-icon">
+                    <img src="assets/icons/figma.png" alt="figma icons" />
+                  </div>
+                  <a href="https://figma.com" target="_blank"
+                    >https://figma.com</a
+                  >
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card_top">
+                  <div class="left">
+                    <div class="project-icon">
+                      <img src="assets/images/Image.png" alt="figma" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="text-bold">Modern Website</p>
+                    <p class="text-subtle subtext">
+                      Powerful website + dashboard template for your next Chakra
+                      UI project.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-card_bottom">
+                  <div class="link-icon">
+                    <img src="assets/icons/link.png" alt="links" />
+                  </div>
+                  <a href="https://ui-8.net" target="_blank"
+                    >https://ui-8.net</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="indicator">
+            <div class="inner-circle"></div>
+          </div>
+          <div class="projects">
+            <h2 class="title">Experience</h2>
+            <div class="companies-container">
+              <div class="company">
+                <div class="indicator"></div>
+                <div class="left space-y">
+                  <div class="top flex flex-center">
+                    <p class="duration">Jul 20 - Jan 22</p>
+                    <div class="location">
+                      <img
+                        src="assets/icons/location.png"
+                        alt="location icon"
+                      />
+                    </div>
+                    <p class="location-name">Cupertino</p>
+                  </div>
+                  <div class="bottom flex flex-space-between">
+                    <div class="left">
+                      <img src="assets/companies/apple.png" alt="Apple icon" />
+                    </div>
+                    <div class="right">
+                      <p class="position text-subtle">Product Designer</p>
+                      <p class="company-name text-bold">Apple</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  Omnis minima inventore minus. Aut et incidunt. Aut fugiat
+                  culpa illum optio dolorum aut maxime ipsa. Laborum incidunt
+                  enim consectetur perspiciatis. Dolore ullam dolor impedit
+                  dolorum recusandae facilis quo et. Et ipsam vel sunt qui ut
+                  officia voluptatem.
+                </div>
+              </div>
+              <div class="company">
+                <div class="indicator"></div>
+                <div class="left space-y">
+                  <div class="top flex flex-center">
+                    <p class="duration">Oct 2015 - Mar 2020</p>
+                    <div class="location">
+                      <img
+                        src="assets/icons/location.png"
+                        alt="location icon"
+                      />
+                    </div>
+                    <p class="location-name">Austin</p>
+                  </div>
+                  <div class="bottom flex flex-space-between">
+                    <div class="left">
+                      <img src="assets/companies/tesla.png" alt="Tesla icon" />
+                    </div>
+                    <div class="right">
+                      <p class="position text-subtle">UX Designer</p>
+                      <p class="company-name text-bold">Tesla</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  Commodi atque sit ut qui assumenda earum aperiam occaecati
+                  voluptates. Fuga quas aut soluta nostrum et beatae. Maiores
+                  repudiandae quibusdam autem enim ut in possimus ad.
+                </div>
+              </div>
+              <div class="company">
+                <div class="indicator"></div>
+                <div class="left space-y">
+                  <div class="top flex flex-start">
+                    <p class="duration">Sep 2014 - Aug 2015</p>
+                    <div class="location">
+                      <img
+                        src="assets/icons/location.png"
+                        alt="location icon"
+                      />
+                    </div>
+                    <p class="location-name">Mountain view</p>
+                  </div>
+                  <div class="bottom flex flex-space-between">
+                    <div class="left">
+                      <img
+                        src="assets/companies/google.png"
+                        alt="Google icon"
+                      />
+                    </div>
+                    <div class="right">
+                      <p class="position text-subtle">
+                        Design system architect
+                      </p>
+                      <p class="company-name text-bold">Google</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  Ut molestias animi. Neque voluptate velit corporis adipisci
+                  voluptate et qui sed neque. Inventore eos non. Qui eveniet quo
+                  incidunt nemo.
+                </div>
+              </div>
+              <div class="company">
+                <div class="indicator"></div>
+                <div class="left space-y">
+                  <div class="top flex flex-start">
+                    <p class="duration">Sep 2010 - Jul 2013</p>
+                    <div class="location">
+                      <img
+                        src="assets/icons/location.png"
+                        alt="location icon"
+                      />
+                    </div>
+                    <p class="location-name">Berlin</p>
+                  </div>
+                  <div class="bottom flex flex-space-between">
+                    <div class="left">
+                      <img
+                        src="assets/companies/vectornator.png"
+                        alt="Vectornator icon"
+                      />
+                    </div>
+                    <div class="right">
+                      <p class="position text-subtle">
+                        Design system architect
+                      </p>
+                      <p class="company-name text-bold">Vectornator</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  Non in fugiat aut consequatur deleniti. Consequuntur impedit
+                  modi asperiores impedit ut ea aut eligendi doloremque. Fugit
+                  laborum ducimus hic tempore velit. Sed vitae et corrupti omnis
+                  temporibus. Unde voluptas quaerat ea rerum aspernatur autem
+                  assumenda animi fugit. Omnis laborum velit voluptatum
+                  similique accusantium eveniet voluptatem.
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="indicator">
+            <div class="inner-circle"></div>
+          </div>
+          <div class="projects">
+            <h2 class="title">Education</h2>
+            <div class="education-container flex">
+              <div class="education space-y">
+                <div class="top flex">
+                  <div class="image">
+                    <img src="assets/education/memorisely.png" alt="" />
+                  </div>
+                  <p class="text-subtle text-bold">Memorisely</p>
+                </div>
+                <div class="bottom">
+                  <p class="text-bold">Build a design system</p>
+                  <p class="text-subtle">Oct 2021</p>
+                </div>
+              </div>
+              <div class="education space-y">
+                <div class="top flex">
+                  <div class="image">
+                    <img src="assets/education/ux-academy.png" alt="" />
+                  </div>
+                  <p class="text-subtle text-bold">UX Academy</p>
+                </div>
+                <div class="bottom">
+                  <p class="text-bold">UX Design Certificate</p>
+                  <p class="text-subtle">Feb 2020</p>
+                </div>
+              </div>
+              <div class="education space-y">
+                <div class="top flex">
+                  <div class="image">
+                    <img src="assets/education/coursera.png" alt="" />
+                  </div>
+                  <p class="text-subtle text-bold">Coursera</p>
+                </div>
+                <div class="bottom">
+                  <p class="text-bold">Usera research coursera</p>
+                  <p class="text-subtle">Dec 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="indicator">
+            <div class="inner-circle"></div>
+          </div>
+          <div class="projects">
+            <h2 class="title">Skills</h2>
+            <div class="skills-container">
+              <div class="designs flex flex-space-between">
+                <div class="left space-y">
+                  <div class="logo">
+                    <img src="assets/icons/design.png" alt="" />
+                  </div>
+                  <p class="text-bold">Design</p>
+                </div>
+                <div class="right">
+                  <div class="two-content skills-common">
+                    <p class="text-bold">
+                      Web <br />
+                      Design
+                    </p>
+                    <p class="text-bold">
+                      Mobile <br />
+                      Design
+                    </p>
+                  </div>
+                  <div class="one-content skills-common">
+                    <p class="text-bold">
+                      User <br />
+                      Experience
+                    </p>
+                  </div>
+                  <div class="one-content skills-common">
+                    <ul class="wi-pro-test">
+                      <li class="text-bold">Wireframing</li>
+                      <li class="text-bold">Prototyping</li>
+                      <li class="text-bold">Testing</li>
+                    </ul>
+                  </div>
+                  <div class="one-content skills-common">
+                    <p class="text-bold">
+                      Design <br />
+                      System
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="development flex flex-space-between">
+                <div class="left space-y">
+                  <div class="logo">
+                    <img src="assets/icons/development.png" alt="" />
+                  </div>
+                  <p class="text-bold">Development</p>
+                </div>
+                <div class="right">
+                  <div class="one-content skills-common">
+                    <p class="text-bold">React JS</p>
+                  </div>
+                  <div class="one-content skills-common">
+                    <ul class="wi-pro-test">
+                      <li class="text-bold">Charka UI</li>
+                      <li class="text-bold">Emotion</li>
+                      <li class="text-bold">Framer</li>
+                    </ul>
+                  </div>
+                  <div class="two-content skills-common">
+                    <p class="text-bold">
+                      Type <br />
+                      Script
+                    </p>
+                    <p class="text-bold">
+                      Next <br />
+                      JS
+                    </p>
+                  </div>
+                  <div class="three-content skills-common">
+                    <p class="text-bold">HTML</p>
+                    <p class="text-bold flex">
+                      <span>CSS</span>
+                      <span>JS</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="indicator">
+            <div class="inner-circle"></div>
+          </div>
+          <div class="project">
+            <h2 class="title">Tools</h2>
+            <div class="tools-container space-y">
+              <div class="top flex flex-space-between">
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/figma.png" alt="Figma" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Figma</p>
+                    <p class="text-subtle">UI Design Prototyping</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/maze.png" alt="maze" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Maze</p>
+                    <p class="text-subtle">Product research</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/spline.png" alt="spline" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Spline</p>
+                    <p class="text-subtle">3D Design</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/zeplin.png" alt="zeplin" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Zeplin</p>
+                    <p class="text-subtle">Design Workspace</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom flex flex-space-between">
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/vectornator.png" alt="vectornator" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Vectornator</p>
+                    <p class="text-subtle">Graphic Design</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/rotato.png" alt="rotato" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Rotato</p>
+                    <p class="text-subtle">Mockups</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/vs-code.png" alt="vs-code" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">VS Code</p>
+                    <p class="text-subtle">Code Editor</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/x-code.png" alt="x-code" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">X Code</p>
+                    <p class="text-subtle">iOS Development</p>
+                  </div>
+                </div>
+                <div class="tool space-y">
+                  <div class="image">
+                    <img src="assets/tools/notion.png" alt="notion" />
+                  </div>
+                  <div class="description">
+                    <p class="text-bold">Notion</p>
+                    <p class="text-subtle">Project Management</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
