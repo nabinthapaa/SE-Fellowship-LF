@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      .parent {
+        height: 500px;
+        aspect-ratio: 1;
+        resize: both;
+        border: 1px solid red;
+
+        /* Flex Box property test  */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        /* multiple line of items while using wrap */
+        align-content: center;
+
+        /* single line of items  */
+        align-items: center;
+      }
+
+      .child {
+        height: 100px;
+        aspect-ratio: 1;
+        border: 1px solid green;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hover {
+        position: relative;
+      }
+
+      .hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: height 400ms ease-in-out;
+        z-index: -1;
+      }
+
+      .hover:hover {
+        color: whitesmoke;
+      }
+
+      .hover:hover::after {
+        height: 100%;
+      }
+
+      .gradient {
+        background-image: linear-gradient(to left, red, green);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child gradient">9</div>
+      <div class="child hover">10</div>
+    </div>
+  </body>
+</html>

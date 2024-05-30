@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", monospace, sans-serif;
+}
+
+.wrapper {
+  padding: clamp(0.5em, 2vw, 2em);
+}
+
+[hidden="true"] {
+  display: none !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.info .about {
+  flex: 1;
+}
+
+.info .image {
+  background: #000;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.text-subtle {
+  opacity: 0.7;
+  font-size: 12px;
+  color: #79819a;
+}
+
+.text-bold {
+  font-weight: 800;
+  font-size: 14px;
+  color: #47516b;
+}
+
+.project-card {
+  padding: 1rem;
+  width: 20rem;
+  background: #f7f9fc;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.project-card_bottom {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: subgrid;
+  place-items: center;
+}
+.project-card_top {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: subgrid;
+  place-items: center;
+}
+.project-card_top .right {
+  grid-column: 2/-1;
+}
+
+.project-card_bottom .link-icon {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: #e1e7fe;
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-icon > img {
+  object-fit: contain;
+}
+
+.project-card_bottom a {
+  justify-self: flex-start;
+}
+
+.aside {
+  width: 25%;
+  background: #f7f9fc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.actual-quote {
+  border: 1px solid red;
+  font-size: 1.25rem;
+  position: relative;
+  width: 70%;
+}
+
+.quotation,
+.quotation-inverted,
+.quote {
+  display: inline-block;
+}
+
+.container.border {
+  margin-top: 1rem;
+  border-top: 2px solid #79819a;
+}
+
+.contact {
+  width: 100%;
+}
+
+.space-y > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.space-y > *:first-child {
+  margin-top: 1rem;
+}
+
+.contact .image {
+  background: #e2e6ee;
+  padding: 0.5rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.contact .image img {
+  object-fit: contain;
+}
+
+.container-title {
+  padding-left: 2em;
+  align-self: flex-start;
+}

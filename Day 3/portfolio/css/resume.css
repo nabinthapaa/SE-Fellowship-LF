@@ -1,6 +1,9 @@
+body {
+  padding: clamp(0.1em, 2vw, 2em);
+}
+
 .container {
   margin-inline: auto;
-  margin-top: 5rem;
   border: 2px solid gray;
 }
 .aside-left {
@@ -66,4 +69,28 @@ dd:not(:first-child) {
 
 .experience dt {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .aside-left {
+    display: block !important;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .aside-left {
+    display: block !important;
+    border: none;
+  }
+
+  .main {
+    display: block !important;
+    border-top: 2px solid gray;
+  }
 }
