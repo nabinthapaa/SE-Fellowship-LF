@@ -147,7 +147,12 @@
 
 .tools-container .top,
 .tools-container .bottom {
+  flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.tools-container .top :nth-child(-1n + 4) {
+  flex-basis: calc(25% - 1rem);
 }
 
 .tool {
@@ -167,6 +172,8 @@
 .tool .description {
   text-align: center;
 }
+
+/* Skills Section CSS here */
 
 .skills-container > :first-child {
   margin-bottom: 1rem;

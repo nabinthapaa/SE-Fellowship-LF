@@ -83,8 +83,8 @@
     flex-wrap: wrap;
   }
 
-  .container.contact :nth-child(2n) {
-    justify-self: end;
+  .tools-container .top :nth-child(n) {
+    flex-basis: calc(33.33% - 1rem);
   }
 
   .timeline-item {
