@@ -247,7 +247,7 @@
                         alt="figma"
                       />
                     </div>
-                    <div class="project-card__header-details">
+                    <div class="project-card__details">
                       <p class="project-card__title">Powerful Design System</p>
                       <p class="project-card__subtitle">
                         Figma UI Kit and Design System targeting a wide variety
@@ -269,25 +269,30 @@
                   </div>
                 </div>
                 <div class="project-card">
-                  <div class="project-card_top">
-                    <div class="left">
-                      <div class="project-icon">
-                        <img src="assets/images/Image.png" alt="figma" />
-                      </div>
+                  <div class="project-card__header">
+                    <div class="project-card__header-image">
+                      <img
+                        class="project-card__image"
+                        src="assets/images/Image.png"
+                        alt="figma"
+                      />
                     </div>
-                    <div class="right">
-                      <p class="text-bold">Modern Website</p>
-                      <p class="text-subtle subtext">
+                    <div class="project-card__details">
+                      <p class="project-card__title">Modern Website</p>
+                      <p class="project-card__subtitle">
                         Powerful website + dashboard template for your next
                         Chakra UI project.
                       </p>
                     </div>
                   </div>
-                  <div class="project-card_bottom">
-                    <div class="link-icon">
+                  <div class="project-card__footer">
+                    <div class="project-card__link-icon">
                       <img src="assets/icons/link.png" alt="links" />
                     </div>
-                    <a href="https://ui-8.net" target="_blank"
+                    <a
+                      class="project-card__link"
+                      href="https://ui-8.net"
+                      target="_blank"
                       >https://ui-8.net</a
                     >
                   </div>
@@ -302,19 +307,21 @@
           </div>
           <div class="container">
             <h2 class="container__title container__title--bold">Experience</h2>
-            <div class="container">
+            <div class="container space-y">
               <div class="company-card">
                 <div class="company-card__indicator"></div>
-                <div class="comapny-card__work-info">
-                  <span class="company-card__duration">Jul 20 - Jan 22</span>
-                  <div class="company-card__location-icon">
-                    <img
-                      class="company-card__image--icon"
-                      src="assets/icons/location.png"
-                      alt="location icon"
-                    />
+                <div class="company-card__work-info">
+                  <div class="company-card__time-location">
+                    <span class="company-card__duration">Jul 20 - Jan 22</span>
+                    <div class="company-card__location-icon">
+                      <img
+                        class="company-card__image-icon"
+                        src="assets/icons/location.png"
+                        alt="location icon"
+                      />
+                    </div>
+                    <span class="company-card__location">Cupertino</span>
                   </div>
-                  <span class="company-card__location">Cupertino</span>
                   <div class="company-card__details">
                     <div class="company-card_image">
                       <img src="assets/companies/apple.png" alt="Apple icon" />
@@ -325,7 +332,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="company-card__decription">
+                <div class="company-card__description">
                   Omnis minima inventore minus. Aut et incidunt. Aut fugiat
                   culpa illum optio dolorum aut maxime ipsa. Laborum incidunt
                   enim consectetur perspiciatis. Dolore ullam dolor impedit
@@ -333,98 +340,101 @@
                   officia voluptatem.
                 </div>
               </div>
-              <div class="company">
-                <div class="indicator"></div>
-                <div class="left space-y">
-                  <div class="top flex flex-center">
-                    <p class="duration">Oct 2015 - Mar 2020</p>
-                    <div class="location">
+              <div class="company-card">
+                <div class="company-card__indicator"></div>
+                <div class="company-card__work-info">
+                  <div class="company-card__time-location">
+                    <p class="company-card__duration">Oct 2015 - Mar 2020</p>
+                    <div class="company-card__location-icon">
                       <img
+                        class="company-card__image-icon"
                         src="assets/icons/location.png"
                         alt="location icon"
                       />
                     </div>
-                    <p class="location-name">Austin</p>
+                    <p class="company-card__location">Austin</p>
                   </div>
-                  <div class="bottom flex flex-space-between">
-                    <div class="left">
+                  <div class="company-card__details">
+                    <div class="company-card__logo">
                       <img src="assets/companies/tesla.png" alt="Tesla icon" />
                     </div>
-                    <div class="right">
-                      <p class="position text-subtle">UX Designer</p>
-                      <p class="company-name text-bold">Tesla</p>
+                    <div class="company-card__work-description">
+                      <p class="company-card__position">UX Designer</p>
+                      <p class="company-card__name">Tesla</p>
                     </div>
                   </div>
                 </div>
-                <div class="right">
+                <div class="company-card__description">
                   Commodi atque sit ut qui assumenda earum aperiam occaecati
                   voluptates. Fuga quas aut soluta nostrum et beatae. Maiores
                   repudiandae quibusdam autem enim ut in possimus ad.
                 </div>
               </div>
-              <div class="company">
-                <div class="indicator"></div>
-                <div class="left space-y">
-                  <div class="top flex flex-start">
-                    <p class="duration">Sep 2014 - Aug 2015</p>
-                    <div class="location">
+              <div class="company-card">
+                <div class="company-card__indicator"></div>
+                <div class="company-card__work-info">
+                  <div class="company-card__time-location">
+                    <p class="company-card__duration">Sep 2014 - Aug 2015</p>
+                    <div class="company-card__location-icon">
                       <img
+                        class="company-card__image-icon"
                         src="assets/icons/location.png"
                         alt="location icon"
                       />
                     </div>
-                    <p class="location-name">Mountain view</p>
+                    <p class="company-card__location">Mountain view</p>
                   </div>
-                  <div class="bottom flex flex-space-between">
-                    <div class="left">
+                  <div class="company-card__details">
+                    <div class="company-card__logo">
                       <img
                         src="assets/companies/google.png"
                         alt="Google icon"
                       />
                     </div>
-                    <div class="right">
-                      <p class="position text-subtle">
+                    <div class="company-card__work-description">
+                      <p class="company-card__position text-subtle">
                         Design system architect
                       </p>
-                      <p class="company-name text-bold">Google</p>
+                      <p class="company-card__name text-bold">Google</p>
                     </div>
                   </div>
                 </div>
-                <div class="right">
+                <div class="company-card__description">
                   Ut molestias animi. Neque voluptate velit corporis adipisci
                   voluptate et qui sed neque. Inventore eos non. Qui eveniet quo
                   incidunt nemo.
                 </div>
               </div>
-              <div class="company">
-                <div class="indicator"></div>
-                <div class="left space-y">
-                  <div class="top flex flex-start">
-                    <p class="duration">Sep 2010 - Jul 2013</p>
-                    <div class="location">
+              <div class="company-card">
+                <div class="company-card__indicator"></div>
+                <div class="company-card__work-info">
+                  <div class="company-card__time-location">
+                    <p class="company-card__duration">Sep 2010 - Jul 2013</p>
+                    <div class="company-card__location-icon">
                       <img
+                        class="company-card__image-icon"
                         src="assets/icons/location.png"
                         alt="location icon"
                       />
                     </div>
-                    <p class="location-name">Berlin</p>
+                    <p class="company-card__location">Berlin</p>
                   </div>
-                  <div class="bottom flex flex-space-between">
-                    <div class="left">
+                  <div class="company-card__details">
+                    <div class="company-card__logo">
                       <img
                         src="assets/companies/vectornator.png"
                         alt="Vectornator icon"
                       />
                     </div>
-                    <div class="right">
-                      <p class="position text-subtle">
+                    <div class="company-card__work-description">
+                      <p class="company-card__position text-subtle">
                         Design system architect
                       </p>
-                      <p class="company-name text-bold">Vectornator</p>
+                      <p class="company-card__name text-bold">Vectornator</p>
                     </div>
                   </div>
                 </div>
-                <div class="right">
+                <div class="company-card__description">
                   Non in fugiat aut consequatur deleniti. Consequuntur impedit
                   modi asperiores impedit ut ea aut eligendi doloremque. Fugit
                   laborum ducimus hic tempore velit. Sed vitae et corrupti omnis
@@ -440,43 +450,52 @@
           <div class="timeline__indicator-1">
             <div class="timeline__indicator-2"></div>
           </div>
-          <div class="projects">
-            <h2 class="title">Education</h2>
-            <div class="education-container flex">
-              <div class="education space-y">
-                <div class="top flex">
-                  <div class="image">
-                    <img src="assets/education/memorisely.png" alt="" />
+          <div class="container">
+            <h2 class="container__title container__title--bold">Education</h2>
+            <div class="container__item--col-center">
+              <div class="education-card">
+                <div class="education-card__header">
+                  <div class="education-card__logo">
+                    <img
+                      src="assets/education/memorisely.png"
+                      alt="Memorisely logo"
+                    />
                   </div>
-                  <p class="text-subtle text-bold">Memorisely</p>
+                  <p class="education-card__institution">Memorisely</p>
                 </div>
-                <div class="bottom">
-                  <p class="text-bold">Build a design system</p>
-                  <p class="text-subtle">Oct 2021</p>
+                <div class="education-card__info">
+                  <p class="education-card__course-title">
+                    Build a design system
+                  </p>
+                  <p class="education-card__date">Oct 2021</p>
                 </div>
               </div>
-              <div class="education space-y">
-                <div class="top flex">
-                  <div class="image">
+              <div class="education-card">
+                <div class="education-card__header">
+                  <div class="education-card__logo">
                     <img src="assets/education/ux-academy.png" alt="" />
                   </div>
-                  <p class="text-subtle text-bold">UX Academy</p>
+                  <p class="education-card__institution">UX Academy</p>
                 </div>
-                <div class="bottom">
-                  <p class="text-bold">UX Design Certificate</p>
-                  <p class="text-subtle">Feb 2020</p>
+                <div class="education-card__info">
+                  <p class="education-card__course-title">
+                    UX Design Certificate
+                  </p>
+                  <p class="education-card__date">Feb 2020</p>
                 </div>
               </div>
-              <div class="education space-y">
-                <div class="top flex">
-                  <div class="image">
+              <div class="education-card">
+                <div class="education-card__header">
+                  <div class="education-card__logo">
                     <img src="assets/education/coursera.png" alt="" />
                   </div>
-                  <p class="text-subtle text-bold">Coursera</p>
+                  <p class="education-card__instution">Coursera</p>
                 </div>
-                <div class="bottom">
-                  <p class="text-bold">Usera research coursera</p>
-                  <p class="text-subtle">Dec 2023</p>
+                <div class="education-card__info">
+                  <p class="education-card__course-title">
+                    Usera research coursera
+                  </p>
+                  <p class="education-card__date">Dec 2023</p>
                 </div>
               </div>
             </div>
@@ -486,79 +505,87 @@
           <div class="timeline__indicator-1">
             <div class="timeline__indicator-2"></div>
           </div>
-          <div class="projects">
-            <h2 class="title">Skills</h2>
-            <div class="skills-container">
-              <div class="designs flex flex-space-between">
-                <div class="left space-y">
-                  <div class="logo">
+          <div class="container">
+            <h2 class="container__title container__title-bold">Skills</h2>
+            <div class="container container__item--col-center">
+              <!--
+                class skill--single, skill--double, skill--triple skill--triple-grid
+              -->
+
+              <div class="skill-category">
+                <div class="skill-category__details">
+                  <div class="skill-category__logo">
                     <img src="assets/icons/design.png" alt="" />
                   </div>
-                  <p class="text-bold">Design</p>
+                  <p class="skill-category__name">Design</p>
                 </div>
-                <div class="right">
-                  <div class="two-content skills-common">
-                    <p class="text-bold">
+                <div
+                  class="skill-category__skills skill-category__skills--purple"
+                >
+                  <div class="skills skills--two">
+                    <p>
                       Web <br />
                       Design
                     </p>
-                    <p class="text-bold">
+                    <p>
                       Mobile <br />
                       Design
                     </p>
                   </div>
-                  <div class="one-content skills-common">
-                    <p class="text-bold">
+                  <div class="skills skills--single">
+                    <p>
                       User <br />
                       Experience
                     </p>
                   </div>
-                  <div class="one-content skills-common">
-                    <ul class="wi-pro-test">
-                      <li class="text-bold">Wireframing</li>
-                      <li class="text-bold">Prototyping</li>
-                      <li class="text-bold">Testing</li>
+                  <div class="skills skills--triple-list">
+                    <ul>
+                      <li>Wireframing</li>
+                      <li>Prototyping</li>
+                      <li>Testing</li>
                     </ul>
                   </div>
-                  <div class="one-content skills-common">
-                    <p class="text-bold">
+                  <div class="skills skills--single">
+                    <p>
                       Design <br />
                       System
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="development flex flex-space-between">
-                <div class="left space-y">
-                  <div class="logo">
+              <div class="skill-category">
+                <div class="skill-category__details">
+                  <div class="skill-category__logo">
                     <img src="assets/icons/development.png" alt="" />
                   </div>
-                  <p class="text-bold">Development</p>
+                  <p class="skill-category__name">Development</p>
                 </div>
-                <div class="right">
-                  <div class="one-content skills-common">
-                    <p class="text-bold">React JS</p>
+                <div
+                  class="skill-category__skills skill-category__skills--blue"
+                >
+                  <div class="skills skills--single">
+                    <p>React JS</p>
                   </div>
-                  <div class="one-content skills-common">
-                    <ul class="wi-pro-test">
-                      <li class="text-bold">Charka UI</li>
-                      <li class="text-bold">Emotion</li>
-                      <li class="text-bold">Framer</li>
+                  <div class="skills skills--triple-list">
+                    <ul>
+                      <li>Charka UI</li>
+                      <li>Emotion</li>
+                      <li>Framer</li>
                     </ul>
                   </div>
-                  <div class="two-content skills-common">
-                    <p class="text-bold">
+                  <div class="skills skills--two">
+                    <p>
                       Type <br />
                       Script
                     </p>
-                    <p class="text-bold">
+                    <p>
                       Next <br />
                       JS
                     </p>
                   </div>
-                  <div class="three-content skills-common">
-                    <p class="text-bold">HTML</p>
-                    <p class="text-bold flex">
+                  <div class="skills skills--triple-grid">
+                    <p>HTML</p>
+                    <p>
                       <span>CSS</span>
                       <span>JS</span>
                     </p>
@@ -572,92 +599,92 @@
           <div class="timeline__indicator-1">
             <div class="timeline__indicator-2"></div>
           </div>
-          <div class="project">
-            <h2 class="title">Tools</h2>
-            <div class="tools-container space-y">
-              <div class="top flex flex-space-between">
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/figma.png" alt="Figma" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Figma</p>
-                    <p class="text-subtle">UI Design Prototyping</p>
-                  </div>
+          <div class="container">
+            <h2 class="container__title container__title--bold">Tools</h2>
+            <div class="container container__item--flex">
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/figma.png" alt="Figma" />
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/maze.png" alt="maze" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Maze</p>
-                    <p class="text-subtle">Product research</p>
-                  </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Figma</p>
+                  <p class="tool-card__usage no-word-wrap">
+                    UI Design, Prototyping
+                  </p>
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/spline.png" alt="spline" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Spline</p>
-                    <p class="text-subtle">3D Design</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/maze.png" alt="maze" />
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/zeplin.png" alt="zeplin" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Zeplin</p>
-                    <p class="text-subtle">Design Workspace</p>
-                  </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Maze</p>
+                  <p class="tool-card__usage no-word-wrap">Product research</p>
                 </div>
-                <!-- </div> -->
-                <!-- <div class="bottom flex flex-space-between"> -->
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/vectornator.png" alt="vectornator" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Vectornator</p>
-                    <p class="text-subtle">Graphic Design</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/spline.png" alt="spline" />
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/rotato.png" alt="rotato" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Rotato</p>
-                    <p class="text-subtle">Mockups</p>
-                  </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Spline</p>
+                  <p class="tool-card__usage no-word-wrap">3D Design</p>
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/vs-code.png" alt="vs-code" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">VS Code</p>
-                    <p class="text-subtle">Code Editor</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/zeplin.png" alt="zeplin" />
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/x-code.png" alt="x-code" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">X Code</p>
-                    <p class="text-subtle">iOS Development</p>
-                  </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Zeplin</p>
+                  <p class="tool-card__usage no-word-wrap">Design Workspace</p>
                 </div>
-                <div class="tool space-y">
-                  <div class="image">
-                    <img src="assets/tools/notion.png" alt="notion" />
-                  </div>
-                  <div class="description">
-                    <p class="text-bold">Notion</p>
-                    <p class="text-subtle">Project Management</p>
-                  </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/vectornator.png" alt="vectornator" />
+                </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Vectornator</p>
+                  <p class="tool-card__usage no-word-wrap">Graphic Design</p>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/rotato.png" alt="rotato" />
+                </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Rotato</p>
+                  <p class="tool-card__usage no-word-wrap">Mockups</p>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/vs-code.png" alt="vs-code" />
+                </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">VS Code</p>
+                  <p class="tool-card__usage no-word-wrap">Code Editor</p>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/x-code.png" alt="x-code" />
+                </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">X Code</p>
+                  <p class="tool-card__usage no-word-wrap">iOS Development</p>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-card__image">
+                  <img src="assets/tools/notion.png" alt="notion" />
+                </div>
+                <div class="tool-card__description">
+                  <p class="tool-card__name">Notion</p>
+                  <p class="tool-card__usage no-word-wrap">
+                    Project Management
+                  </p>
                 </div>
               </div>
             </div>
