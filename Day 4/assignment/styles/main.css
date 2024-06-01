@@ -1,7 +1,6 @@
 /* TODO: Please rewrite the names in html */
 .main {
-  padding: 4rem 3rem 4rem 2rem;
-  margin-top: 4rem;
+  padding: 4rem clamp(0.5rem, 2vw, 3rem) 4rem clamp(0.5rem, 2vw, 2rem);
 }
 
 .timeline__item .title {
@@ -142,15 +141,21 @@
   gap: 1rem;
 }
 
+.company-card__work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .company-card__position {
   color: var(--gray-default);
   font-size: var(--font-size-xs);
 }
 
-.company-card__position {
+.company-card__name {
   color: var(--gray-darker);
   font-size: var(--font-size-sm);
-  flex-weight: var(--font-weight-semi-bold);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .company-card__location-icon {
@@ -170,15 +175,17 @@
   background-color: var(--gray-darker);
   left: -0.25rem;
   top: 2px;
+  box-shadow: 1px 1px 0px 10px #fff;
+  z-index: 1;
 }
 
 .company-card__work-info::before {
   position: absolute;
   content: "";
   width: 1px;
-  height: 80%;
+  height: 90%;
   background-color: var(--gray-light);
-  left: -0.125rem;
+  left: calc(calc(0.25rem - calc(10px / 2)) + calc(1rem / 10));
   bottom: 0.125rem;
 }
 
@@ -191,14 +198,18 @@
   gap: 1rem;
   padding: 1.125rem;
   background: var(--gray-light-2);
-  border-radius: var(--border-radius);
-  width: 100%;
+  flex-grow: 1;
 }
 
 .education-card__header {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.education-card__logo {
+  min-width: 48px;
+  aspect-ratio: 1;
 }
 
 .education-card__info {
@@ -218,52 +229,15 @@
   font-size: var(--font-size-sm);
 }
 
-.education:first-child {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+.education-card:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
 }
 
-.education:last-child {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+.education-card:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
-
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background: #f7f9fc;
-  gap: 0.5rem;
-  flex-basis: calc(33% - 1rem);
-}
-
-.tool-card__name {
-  font-weight: var(--font-weight-medium);
-  color: var(--gray-darker);
-  font-size: var(--font-size-md);
-}
-
-.tool-card__usage {
-  font-size: var(--font-size-xxs);
-  color: var(--gray-default);
-}
-
-.tool-card__image {
-  height: 48px;
-  aspect-ratio: 1;
-}
-
-.tool-card__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
-}
-
-/* Skills Section CSS here */
 
 .skill-category {
   display: flex;
@@ -309,22 +283,99 @@
   padding: 1rem;
 }
 
+.skills:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.skills:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
 .skills--two {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.skills--two :first-child {
-  padding-inline-end: 1rem;
-  border-right: 1px solid var(--gray-light);
+  grid-template-columns: 1fr 0.5fr 1fr;
+  place-items: center;
 }
 
 .skills--triple-list {
   padding-inline: 1rem;
 }
 
+.skills--triple-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-vertical {
+  display: flex;
+  align-content: space-between;
+  justify-content: stretch;
+  flex-direction: column;
+}
+
 .skills--triple-list ul {
   list-style: disc;
   padding-inline-start: 1rem;
+}
+
+.container:has(.tool-card) {
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: #f7f9fc;
+  gap: 0.5rem;
+  flex: 1;
+  flex-basis: calc(33% - 1rem);
+}
+
+.tool-card__name {
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-darker);
+  font-size: var(--font-size-md);
+}
+
+.tool-card__usage {
+  font-size: var(--font-size-xxs);
+  color: var(--gray-default);
+}
+
+.tool-card__image {
+  height: 48px;
+  aspect-ratio: 1;
+}
+
+.tool-card__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.tool-card:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+.tool-card:last-child {
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.tool-card:nth-child(4) {
+  border-top-right-radius: var(--border-radius);
+}
+
+.tool-card:nth-child(5) {
+  border-bottom-left-radius: var(--border-radius);
 }

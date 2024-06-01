@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
   </head>
   <body>
     <aside class="about">
@@ -27,18 +27,18 @@
             <h2 class="about__position">Product Designer</h2>
           </div>
         </div>
-        <div class="container--row-center border">
-          <div class="quote container__item--col-center border">
+        <div class="container--row-center">
+          <div class="quote container__item--col-center">
             <p class="quote__text">
               <span class="quote__start">Design</span> isn’t finished until
-              somebody is using <span class="quote__end">it</span>.
+              somebody is using <span class="quote__end">it.</span>
             </p>
             <p class="quote__author">Brenda Laurel</p>
           </div>
         </div>
         <!-- Contact -->
         <div class="container">
-          <div class="divider"></div>
+          <div class="divider__horizontal--large"></div>
           <div class="container__item--flex">
             <!-- block start  -->
             <div class="card">
@@ -108,7 +108,7 @@
         </div>
         <!-- Socials -->
         <div class="container">
-          <div class="divider"></div>
+          <div class="divider__horizontal--large"></div>
           <p class="container__title">Socials</p>
           <div class="container__item--flex">
             <div class="card">
@@ -167,7 +167,7 @@
         </div>
         <!-- Languages -->
         <div class="container">
-          <div class="divider"></div>
+          <div class="divider__horizontal--large"></div>
           <p class="container__title">Languages</p>
           <div class="container__item--flex">
             <div class="card">
@@ -328,7 +328,7 @@
                     </div>
                     <div class="company-card__work">
                       <p class="company-card__position">Product Designer</p>
-                      <p class="compnay-carr__company-name">Apple</p>
+                      <p class="company-card__name">Apple</p>
                     </div>
                   </div>
                 </div>
@@ -358,7 +358,7 @@
                     <div class="company-card__logo">
                       <img src="assets/companies/tesla.png" alt="Tesla icon" />
                     </div>
-                    <div class="company-card__work-description">
+                    <div class="company-card__work">
                       <p class="company-card__position">UX Designer</p>
                       <p class="company-card__name">Tesla</p>
                     </div>
@@ -391,7 +391,7 @@
                         alt="Google icon"
                       />
                     </div>
-                    <div class="company-card__work-description">
+                    <div class="company-card__work">
                       <p class="company-card__position text-subtle">
                         Design system architect
                       </p>
@@ -426,7 +426,7 @@
                         alt="Vectornator icon"
                       />
                     </div>
-                    <div class="company-card__work-description">
+                    <div class="company-card__work">
                       <p class="company-card__position text-subtle">
                         Design system architect
                       </p>
@@ -452,50 +452,54 @@
           </div>
           <div class="container">
             <h2 class="container__title container__title--bold">Education</h2>
-            <div class="container__item--col-center">
-              <div class="education-card">
-                <div class="education-card__header">
-                  <div class="education-card__logo">
-                    <img
-                      src="assets/education/memorisely.png"
-                      alt="Memorisely logo"
-                    />
+            <div class="container">
+              <div class="container__item--flex">
+                <div class="education-card">
+                  <div class="education-card__header">
+                    <div class="education-card__logo">
+                      <img
+                        src="assets/education/memorisely.png"
+                        alt="Memorisely logo"
+                      />
+                    </div>
+                    <p class="education-card__institution">Memorisely</p>
                   </div>
-                  <p class="education-card__institution">Memorisely</p>
-                </div>
-                <div class="education-card__info">
-                  <p class="education-card__course-title">
-                    Build a design system
-                  </p>
-                  <p class="education-card__date">Oct 2021</p>
-                </div>
-              </div>
-              <div class="education-card">
-                <div class="education-card__header">
-                  <div class="education-card__logo">
-                    <img src="assets/education/ux-academy.png" alt="" />
+                  <div class="education-card__info">
+                    <p class="education-card__course-title no-word-wrap">
+                      Build a design system
+                    </p>
+                    <p class="education-card__date">Oct 2021</p>
                   </div>
-                  <p class="education-card__institution">UX Academy</p>
                 </div>
-                <div class="education-card__info">
-                  <p class="education-card__course-title">
-                    UX Design Certificate
-                  </p>
-                  <p class="education-card__date">Feb 2020</p>
-                </div>
-              </div>
-              <div class="education-card">
-                <div class="education-card__header">
-                  <div class="education-card__logo">
-                    <img src="assets/education/coursera.png" alt="" />
+                <div class="education-card">
+                  <div class="education-card__header">
+                    <div class="education-card__logo">
+                      <img src="assets/education/ux-academy.png" alt="" />
+                    </div>
+                    <p class="education-card__institution no-word-wrap">
+                      UX Academy
+                    </p>
                   </div>
-                  <p class="education-card__instution">Coursera</p>
+                  <div class="education-card__info">
+                    <p class="education-card__course-title no-word-wrap">
+                      UX Design Certificate
+                    </p>
+                    <p class="education-card__date">Feb 2020</p>
+                  </div>
                 </div>
-                <div class="education-card__info">
-                  <p class="education-card__course-title">
-                    Usera research coursera
-                  </p>
-                  <p class="education-card__date">Dec 2023</p>
+                <div class="education-card">
+                  <div class="education-card__header">
+                    <div class="education-card__logo">
+                      <img src="assets/education/coursera.png" alt="" />
+                    </div>
+                    <p class="education-card__instution">Coursera</p>
+                  </div>
+                  <div class="education-card__info">
+                    <p class="education-card__course-title no-word-wrap">
+                      Usera research coursera
+                    </p>
+                    <p class="education-card__date">Dec 2023</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -508,10 +512,6 @@
           <div class="container">
             <h2 class="container__title container__title-bold">Skills</h2>
             <div class="container container__item--col-center">
-              <!--
-                class skill--single, skill--double, skill--triple skill--triple-grid
-              -->
-
               <div class="skill-category">
                 <div class="skill-category__details">
                   <div class="skill-category__logo">
@@ -527,6 +527,7 @@
                       Web <br />
                       Design
                     </p>
+                    <div class="divider__vertical--small"></div>
                     <p>
                       Mobile <br />
                       Design
@@ -578,6 +579,7 @@
                       Type <br />
                       Script
                     </p>
+                    <div class="divider__vertical--small"></div>
                     <p>
                       Next <br />
                       JS
@@ -585,8 +587,10 @@
                   </div>
                   <div class="skills skills--triple-grid">
                     <p>HTML</p>
-                    <p>
+                    <div class="divider__vertical--large"></div>
+                    <p class="skills-vertical">
                       <span>CSS</span>
+                      <span class="divider__horizontal--small"></span>
                       <span>JS</span>
                     </p>
                   </div>
@@ -608,9 +612,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Figma</p>
-                  <p class="tool-card__usage no-word-wrap">
-                    UI Design, Prototyping
-                  </p>
+                  <p class="tool-card__usage">UI Design, Prototyping</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -619,7 +621,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Maze</p>
-                  <p class="tool-card__usage no-word-wrap">Product research</p>
+                  <p class="tool-card__usage">Product research</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -628,7 +630,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Spline</p>
-                  <p class="tool-card__usage no-word-wrap">3D Design</p>
+                  <p class="tool-card__usage">Design</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -637,7 +639,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Zeplin</p>
-                  <p class="tool-card__usage no-word-wrap">Design Workspace</p>
+                  <p class="tool-card__usage">Design Workspace</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -646,7 +648,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Vectornator</p>
-                  <p class="tool-card__usage no-word-wrap">Graphic Design</p>
+                  <p class="tool-card__usage">Graphic Design</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -655,7 +657,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Rotato</p>
-                  <p class="tool-card__usage no-word-wrap">Mockups</p>
+                  <p class="tool-card__usage">Mockups</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -664,7 +666,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">VS Code</p>
-                  <p class="tool-card__usage no-word-wrap">Code Editor</p>
+                  <p class="tool-card__usage">Code Editor</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -673,7 +675,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">X Code</p>
-                  <p class="tool-card__usage no-word-wrap">iOS Development</p>
+                  <p class="tool-card__usage">iOS Development</p>
                 </div>
               </div>
               <div class="tool-card">
@@ -682,9 +684,7 @@
                 </div>
                 <div class="tool-card__description">
                   <p class="tool-card__name">Notion</p>
-                  <p class="tool-card__usage no-word-wrap">
-                    Project Management
-                  </p>
+                  <p class="tool-card__usage">Project Management</p>
                 </div>
               </div>
             </div>
