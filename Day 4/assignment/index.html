@@ -1,154 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
   </head>
   <body>
-    <aside class="aside">
-      <div class="profile-image">
+    <aside class="about">
+      <div class="about__image">
         <img src="assets/images/picture.png" alt="profile image" />
       </div>
       <div class="wrapper">
-        <div class="container info-container">
-          <h1 class="name">Chiara Bianchi</h1>
-          <h2 class="title">Product Designer</h2>
+        <div class="container container--row-center">
+          <div class="container__item about__description">
+            <h1 class="about__name">Chiara Bianchi</h1>
+            <h2 class="about__position">Product Designer</h2>
+          </div>
         </div>
-        <div class="container quote-container">
-          <p class="quote text-bold">
-            Design isn’t finished until somebody is using it.
-          </p>
-          <p class="author text-subtle">Brenda Laurel</p>
+        <div class="container--row-center border">
+          <div class="quote container__item--col-center border">
+            <p class="quote__text">
+              <span class="quote__start">Design</span> isn’t finished until
+              somebody is using <span class="quote__end">it</span>.
+            </p>
+            <p class="quote__author">Brenda Laurel</p>
+          </div>
         </div>
-        <div class="container contact border contact space-y">
-          <div class="flex flex-col">
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/mail.png" alt="mail icon" />
+        <!-- Contact -->
+        <div class="container">
+          <div class="divider"></div>
+          <div class="container__item--flex">
+            <!-- block start  -->
+            <div class="card">
+              <div class="card__image card__image--bg">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/mail.png"
+                  alt="mail icon"
+                />
               </div>
-              <div class="about">
-                <p class="text-subtle">Email</p>
-                <a href="mailto:chiara.bianchi@gmail.com" class="text-bold"
+              <div class="card__description">
+                <p class="card__text">Email</p>
+                <a
+                  href="mailto:chiara.bianchi@gmail.com"
+                  class="card__text--bold"
                   >chiara.bianchi@gmail.com</a
                 >
               </div>
             </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/link.png" alt="Link chain icon" />
+            <!-- block end -->
+            <div class="card">
+              <div class="card__image card__image--bg">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/link.png"
+                  alt="Link chain icon"
+                />
               </div>
-              <div class="about">
-                <p class="text-subtle">Website</p>
-                <a href="https://aldesign.it" class="text-bold"
+              <div class="card__description">
+                <p class="card__text">Website</p>
+                <a href="https://aldesign.it" class="card__text--bold"
                   >https://aldesign.it</a
                 >
               </div>
             </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/phone.png" alt="phone icon" />
+            <div class="card">
+              <div class="card__image card__image--bg">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/phone.png"
+                  alt="phone icon"
+                />
               </div>
-              <div class="about">
-                <p class="text-subtle">Phone</p>
-                <a href="tel:+393330123765" class="text-bold"
+              <div class="card__description">
+                <p class="card__text">Phone</p>
+                <a
+                  href="tel:+393330123765"
+                  class="card__text--bold no-word-wrap"
                   >(+39) 333 0123 765</a
                 >
               </div>
             </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/location.png" alt="location icon" />
+            <div class="card">
+              <div class="card__image card__image--bg">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/location.png"
+                  alt="location icon"
+                />
               </div>
-              <div class="about">
-                <p class="text-subtle">Address</p>
-                <p class="text-bold no-word-wrap">@chiara.designs</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container border socials space-y">
-          <p class="container-title text-subtle">Socials</p>
-          <div class="flex flex-col">
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/instagram.png" alt="instagram" />
-              </div>
-              <div class="about">
-                <p class="text-subtle">Instgram</p>
-                <p class="text-bold">@chiara.designs</p>
-              </div>
-            </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/dribble.png" alt="instagram" />
-              </div>
-              <div class="about">
-                <p class="text-subtle">Dribble</p>
-                <p class="text-bold no-word-wrap">@chiara-designs</p>
-              </div>
-            </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/twitter.png" alt="instagram" />
-              </div>
-              <div class="about">
-                <p class="text-subtle">Twitter</p>
-                <p class="text-bold">@chiaradesigns</p>
-              </div>
-            </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/icons/linkedin.png" alt="instagram" />
-              </div>
-              <div class="about">
-                <p class="text-subtle">Linkedin</p>
-                <p class="text-bold no-word-wrap">chiara-bianchi-123</p>
+              <div class="card__description">
+                <p class="card__text">Address</p>
+                <p class="card__text--bold no-word-wrap">Bologna, Italy</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="container border socials space-y">
-          <p class="container-title text-subtle">Languages</p>
-          <div class="flex flex-col">
-            <div class="info">
-              <div class="image">
-                <img src="assets/flags/italy.png" alt="instagram" />
+        <!-- Socials -->
+        <div class="container">
+          <div class="divider"></div>
+          <p class="container__title">Socials</p>
+          <div class="container__item--flex">
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/instagram.png"
+                  alt="instagram"
+                />
               </div>
-              <div class="about">
-                <p class="text-bold">Itallian</p>
-                <p class="text-subtle">Native</p>
-              </div>
-            </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/flags/greece.png" alt="instagram" />
-              </div>
-              <div class="about">
-                <p class="text-bold">Greek</p>
-                <p class="text-subtle">Native</p>
+              <div class="card__description">
+                <p class="card__text">Instgram</p>
+                <p class="card__text--bold">@chiara.designs</p>
               </div>
             </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/flags/britain.png" alt="instagram" />
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/dribble.png"
+                  alt="instagram"
+                />
               </div>
-              <div class="about">
-                <p class="text-bold">English</p>
-                <p class="text-subtle">Professional Working</p>
+              <div class="card__description">
+                <p class="card__text">Dribble</p>
+                <p class="card__text--bold no-word-wrap">@chiara-designs</p>
               </div>
             </div>
-            <div class="info">
-              <div class="image">
-                <img src="assets/flags/spain.png" alt="instagram" />
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/twitter.png"
+                  alt="instagram"
+                />
               </div>
-              <div class="about">
-                <p class="text-bold">Spanish</p>
-                <p class="text-subtle">Elementary</p>
+              <div class="card__description">
+                <p class="card__text">Twitter</p>
+                <p class="card__text--bold">@chiaradesigns</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/icons/linkedin.png"
+                  alt="instagram"
+                />
+              </div>
+              <div class="card__description">
+                <p class="card__text">Linkedin</p>
+                <p class="card__text--bold no-word-wrap">chiara-bianchi-123</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Languages -->
+        <div class="container">
+          <div class="divider"></div>
+          <p class="container__title">Languages</p>
+          <div class="container__item--flex">
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/flags/italy.png"
+                  alt="instagram"
+                />
+              </div>
+              <div class="card__description">
+                <p class="card__text--bold">Itallian</p>
+                <p class="card__text">Native</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/flags/greece.png"
+                  alt="instagram"
+                />
+              </div>
+              <div class="card__description">
+                <p class="card__text--bold">Greek</p>
+                <p class="card__text">Native</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/flags/britain.png"
+                  alt="instagram"
+                />
+              </div>
+              <div class="card__description">
+                <p class="card__text--bold">English</p>
+                <p class="card__text">Professional Working</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  class="card__image-icon"
+                  src="assets/flags/spain.png"
+                  alt="instagram"
+                />
+              </div>
+              <div class="card__description">
+                <p class="card__text--bold">Spanish</p>
+                <p class="card__text">Elementary</p>
               </div>
             </div>
           </div>
@@ -157,95 +228,104 @@
     </aside>
     <main class="main">
       <ul class="timeline">
-        <li class="timeline-item">
-          <div class="indicator">
-            <div class="inner-circle"></div>
+        <li class="timeline__item">
+          <div class="timeline__indicator-1">
+            <div class="timeline__indicator-2"></div>
           </div>
-          <div class="projects">
-            <h2 class="title">Latest Projects</h2>
-            <div class="cards-container">
-              <div class="project-card">
-                <div class="project-card_top">
-                  <div class="left">
-                    <div class="project-icon">
-                      <img src="assets/tools/figma.png" alt="figma" />
+          <div class="container">
+            <h2 class="container__title container__title--bold">
+              Latest Projects
+            </h2>
+            <div class="container">
+              <div class="container__item--flex">
+                <div class="project-card">
+                  <div class="project-card__header">
+                    <div class="project-card__header-image">
+                      <img
+                        class="project-card__image"
+                        src="assets/tools/figma.png"
+                        alt="figma"
+                      />
+                    </div>
+                    <div class="project-card__header-details">
+                      <p class="project-card__title">Powerful Design System</p>
+                      <p class="project-card__subtitle">
+                        Figma UI Kit and Design System targeting a wide variety
+                        of use cases.
+                      </p>
                     </div>
                   </div>
-                  <div class="right">
-                    <p class="text-bold">Powerful Design System</p>
-                    <p class="text-subtle subtext">
-                      Figma UI Kit and Design System targeting a wide variety of
-                      use cases.
-                    </p>
+                  <div class="project-card__footer">
+                    <div class="project-card__link-icon">
+                      <img src="assets/icons/figma.png" alt="figma icons" />
+                    </div>
+                    <a
+                      class="project-card__link"
+                      href="https://figma.com"
+                      target="_blank"
+                    >
+                      https://figma.com
+                    </a>
                   </div>
                 </div>
-                <div class="project-card_bottom">
-                  <div class="link-icon">
-                    <img src="assets/icons/figma.png" alt="figma icons" />
-                  </div>
-                  <a href="https://figma.com" target="_blank"
-                    >https://figma.com</a
-                  >
-                </div>
-              </div>
-              <div class="project-card">
-                <div class="project-card_top">
-                  <div class="left">
-                    <div class="project-icon">
-                      <img src="assets/images/Image.png" alt="figma" />
+                <div class="project-card">
+                  <div class="project-card_top">
+                    <div class="left">
+                      <div class="project-icon">
+                        <img src="assets/images/Image.png" alt="figma" />
+                      </div>
+                    </div>
+                    <div class="right">
+                      <p class="text-bold">Modern Website</p>
+                      <p class="text-subtle subtext">
+                        Powerful website + dashboard template for your next
+                        Chakra UI project.
+                      </p>
                     </div>
                   </div>
-                  <div class="right">
-                    <p class="text-bold">Modern Website</p>
-                    <p class="text-subtle subtext">
-                      Powerful website + dashboard template for your next Chakra
-                      UI project.
-                    </p>
+                  <div class="project-card_bottom">
+                    <div class="link-icon">
+                      <img src="assets/icons/link.png" alt="links" />
+                    </div>
+                    <a href="https://ui-8.net" target="_blank"
+                      >https://ui-8.net</a
+                    >
                   </div>
-                </div>
-                <div class="project-card_bottom">
-                  <div class="link-icon">
-                    <img src="assets/icons/link.png" alt="links" />
-                  </div>
-                  <a href="https://ui-8.net" target="_blank"
-                    >https://ui-8.net</a
-                  >
                 </div>
               </div>
             </div>
           </div>
         </li>
-        <li class="timeline-item">
-          <div class="indicator">
-            <div class="inner-circle"></div>
+        <li class="timeline__item">
+          <div class="timeline__indicator-1">
+            <div class="timeline__indicator-2"></div>
           </div>
-          <div class="projects">
-            <h2 class="title">Experience</h2>
-            <div class="companies-container">
-              <div class="company">
-                <div class="indicator"></div>
-                <div class="left space-y">
-                  <div class="top flex flex-center">
-                    <p class="duration">Jul 20 - Jan 22</p>
-                    <div class="location">
-                      <img
-                        src="assets/icons/location.png"
-                        alt="location icon"
-                      />
-                    </div>
-                    <p class="location-name">Cupertino</p>
+          <div class="container">
+            <h2 class="container__title container__title--bold">Experience</h2>
+            <div class="container">
+              <div class="company-card">
+                <div class="company-card__indicator"></div>
+                <div class="comapny-card__work-info">
+                  <span class="company-card__duration">Jul 20 - Jan 22</span>
+                  <div class="company-card__location-icon">
+                    <img
+                      class="company-card__image--icon"
+                      src="assets/icons/location.png"
+                      alt="location icon"
+                    />
                   </div>
-                  <div class="bottom flex flex-space-between">
-                    <div class="left">
+                  <span class="company-card__location">Cupertino</span>
+                  <div class="company-card__details">
+                    <div class="company-card_image">
                       <img src="assets/companies/apple.png" alt="Apple icon" />
                     </div>
-                    <div class="right">
-                      <p class="position text-subtle">Product Designer</p>
-                      <p class="company-name text-bold">Apple</p>
+                    <div class="company-card__work">
+                      <p class="company-card__position">Product Designer</p>
+                      <p class="compnay-carr__company-name">Apple</p>
                     </div>
                   </div>
                 </div>
-                <div class="right">
+                <div class="company-card__decription">
                   Omnis minima inventore minus. Aut et incidunt. Aut fugiat
                   culpa illum optio dolorum aut maxime ipsa. Laborum incidunt
                   enim consectetur perspiciatis. Dolore ullam dolor impedit
@@ -356,9 +436,9 @@
             </div>
           </div>
         </li>
-        <li class="timeline-item">
-          <div class="indicator">
-            <div class="inner-circle"></div>
+        <li class="timeline__item">
+          <div class="timeline__indicator-1">
+            <div class="timeline__indicator-2"></div>
           </div>
           <div class="projects">
             <h2 class="title">Education</h2>
@@ -402,9 +482,9 @@
             </div>
           </div>
         </li>
-        <li class="timeline-item">
-          <div class="indicator">
-            <div class="inner-circle"></div>
+        <li class="timeline__item">
+          <div class="timeline__indicator-1">
+            <div class="timeline__indicator-2"></div>
           </div>
           <div class="projects">
             <h2 class="title">Skills</h2>
@@ -488,9 +568,9 @@
             </div>
           </div>
         </li>
-        <li class="timeline-item">
-          <div class="indicator">
-            <div class="inner-circle"></div>
+        <li class="timeline__item">
+          <div class="timeline__indicator-1">
+            <div class="timeline__indicator-2"></div>
           </div>
           <div class="project">
             <h2 class="title">Tools</h2>

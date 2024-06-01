@@ -1,4 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+:root {
+  --gray-default: #79819a;
+  --gray-dark: #47516b;
+  --gray-darker: #2e2e48;
+  --gray-light: #e2e6ee;
+  --gray-light-2: #f7f9fc;
+  --white: #ffffff;
+  --primary-default: #9251f7;
+  --primary-dark: #5531a7;
+  --secondary-default: #516cf7;
+  --secondary-light: #e1e7fe;
+
+  --font-primary: "DM Sans", sans-serif;
+  --font-secondary: "Outfit", sans-serif;
+
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  --border-radius: 0.5rem;
+}
 
 * {
   margin: 0;
@@ -7,33 +35,12 @@
   font-family: "DM Sans", monospace, sans-serif;
 }
 
-body {
-  display: flex;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 1.125rem;
-}
-
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-space-between {
-  justify-content: space-between;
-  align-items: center;
+.border {
+  outline: 1px solid red;
 }
 
 .wrapper {
-  padding: clamp(0.5em, 2vw, 2em);
+  padding-inline: clamp(1.5em, 1vw, 3em);
 }
 
 [hidden="true"] {
@@ -47,25 +54,150 @@ a {
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  display: block;
 }
 
-.info {
-  width: 80%;
+.about {
+  background-color: var(--gray-light-2);
+}
+
+.about__description {
+  font: var(--font-weight-medium) var(--font-size-md) var(--font-secondary);
+  padding-block: 2rem;
+}
+
+.about__name {
+  margin: 0.5rem 0;
+  font-size: var(--font-size-3xl);
+}
+
+.about__position {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #9251f7, #516cf7);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__item--flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.125rem;
+}
+
+.container__item--col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__item {
+  flex-wrap: wrap;
+}
+
+.container__title {
+  color: var(--gray-default);
+  margin-bottom: 1.125rem;
+}
+
+.container__title--bold {
+  color: var(--gray-darker);
+}
+
+.divider {
+  border: 1px solid var(--gray-light);
+  margin-block: 2rem;
+}
+
+.quote {
+  font: var(--font-weight-medium) var(--font-size-lg) var(--font-secondary);
+}
+
+.quote__start,
+.quote__end {
+  position: relative;
+}
+
+.quote__end::after,
+.quote__start::before {
+  --position: calc(-1 * var(--font-size-lg));
+  position: absolute;
+  content: "";
+  height: 10px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.quote__start::before {
+  left: var(--position, 0);
+  background-image: url("../assets/icons/quotation.svg");
+}
+
+.quote__end::after {
+  right: var(--position, 0);
+  background-image: url("../assets/icons/quotation-inverted.svg");
+}
+
+.quote__author {
+  font-size: var(--font-size-xs);
+  color: var(--gray-default);
+}
+
+.card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 16px;
+  flex: 1 0 max(228px, calc(50% - 6rem));
 }
 
-.info .about {
-  flex: 1;
-}
-
-.info .image {
+.card__image {
   flex-shrink: 0;
   aspect-ratio: 1;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  align-self: center;
+}
+
+.card__description {
+  flex: 1;
+}
+
+.card__image--bg {
+  background: var(--gray-light);
+  padding: 0.5rem;
+}
+
+.card__image-icon {
+  object-fit: contain;
+}
+
+.card__text {
+  font-weight: var(--font-weight-regular);
+  color: var(--gray-default);
+}
+
+.card__text--bold {
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-dark);
 }
 
 .info-container {
@@ -99,12 +231,14 @@ img {
   grid-template-columns: subgrid;
   place-items: center;
 }
+
 .project-card_top {
   display: grid;
   grid-column: 1/-1;
   grid-template-columns: subgrid;
   place-items: center;
 }
+
 .project-card_top .right {
   grid-column: 2/-1;
 }
@@ -124,26 +258,9 @@ img {
   justify-self: flex-start;
 }
 
-.aside {
-  width: 25%;
-  background: #f7f9fc;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
-
 .name {
   font-size: 32px;
   font-weight: 900;
-}
-
-.container.border {
-  margin-top: 1rem;
-  border-top: 1px solid #e2e6ee;
 }
 
 .contact {
@@ -165,10 +282,6 @@ img {
   aspect-ratio: 1;
 }
 
-.container-title {
-  align-self: flex-start;
-}
-
 .quote-container {
   margin-top: 2rem;
 }
@@ -184,32 +297,4 @@ img {
   width: 80%;
   font-size: 0.75rem;
   margin-top: 0.2rem;
-}
-
-.quote::before {
-  position: absolute;
-  content: "";
-  height: 10px;
-  left: -15px;
-  aspect-ratio: 1;
-  background-image: url("../assets/icons/quotation.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.quote::after {
-  position: absolute;
-  content: "";
-  height: 10px;
-  right: -15px;
-  aspect-ratio: 1;
-  background-image: url("../assets/icons/quotation-inverted.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.name + .title {
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #a478e8, #516cf7);
 }

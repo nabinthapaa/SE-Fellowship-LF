@@ -1,10 +1,10 @@
 /* TODO: Please rewrite the names in html */
 .main {
-  flex: 1;
   padding: clamp(0.1em, 2vw, 5em);
+  margin-top: 4rem;
 }
 
-.timeline-item .title {
+.timeline__item .title {
   margin-bottom: 1rem;
 }
 
@@ -19,14 +19,14 @@
   gap: 0.5rem;
 }
 
-.timeline-item {
+.timeline__item {
   list-style: none;
   position: relative;
   padding-inline-start: 64px;
   padding-bottom: 32px;
 }
 
-.timeline-item .indicator {
+.timeline__indicator-1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,20 +43,30 @@
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
-.timeline-item .indicator .inner-circle {
+.timeline__indicator-2 {
   width: 10px;
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: #592ea5;
 }
 
-.timeline-item:not(:last-child)::before {
+.timeline__item:not(:last-child)::before {
   content: "";
   height: 100%;
   width: 2px;
   position: absolute;
   left: 16px;
   background-color: #e1e4ec;
+}
+
+.project-card:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.project-card:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .company {
@@ -131,16 +141,6 @@
 }
 
 .education:last-child {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-
-.project-card:first-child {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-
-.project-card:last-child {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
