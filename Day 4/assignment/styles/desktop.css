@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  .wrapper {
+    padding-inline: 3rem;
+  }
+
+  .about__description,
+  .quote,
+  .quote__text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .quote__author {
+    align-self: start;
+  }
+
+  .company-card {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .company-card__description {
+    width: 60%;
+  }
+
+  .skill-category__skills {
+    flex-direction: row;
+  }
+
+  .skills {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container:has(.tool-card) {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .tool-card {
+    flex: 1;
+  }
+
+  .tool-card:nth-child(-1n + 4) {
+    flex-basis: calc(25% - 1rem);
+  }
+
+  .tool-card:nth-child(n + 4) {
+    flex-basis: calc(calc(100% / 5) - 1rem);
+  }
+}
