@@ -1,0 +1,7 @@
+.title-mid {
+  font-size: $sec-title-font-size;
+  margin-bottom: $sec-title-margin-bottom;
+  &.mb-large {
+    margin-bottom: $sec-title-margin-bottom-lg;
+  }
+}

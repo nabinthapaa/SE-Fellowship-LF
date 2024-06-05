@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.title-mid {
+  font-size: 60px;
+  margin-bottom: 103px;
+}
+.title-mid.mb-large {
+  margin-bottom: 105px;
+}
+
+/*# sourceMappingURL=style.css.map */

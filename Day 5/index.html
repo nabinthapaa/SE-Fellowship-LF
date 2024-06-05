@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM Naming</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .header__left {
+        background: pink;
+      }
+
+      .header__right {
+        background: maroon;
+      }
+
+      /* For Navbar */
+
+      .nav {
+        display: flex;
+        list-style-type: none;
+      }
+
+      .nav__item {
+        font-size: 12px;
+      }
+
+      .nav__item--active {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- site menus -->
+      <nav>
+        <ul class="header__left nav">
+          <li><a class="nav__item--active" href="#">Home</a></li>
+          <li><a class="nav__item" href="#">About</a></li>
+          <li><a class="nav__item" href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <!-- header right -->
+      <div class="header__right">
+        <button>Login</button>
+        <button>Sign up</button>
+      </div>
+    </header>
+  </body>
+</html>
