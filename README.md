@@ -93,6 +93,15 @@
               >Host</a
             >
           </td>
+        </tr><tr>
+          <td>Assignment - 5 [Car Lane Game]</td>
+          <td>Typescript</td>
+          <td>
+            <a href="https://github.com/nabinthapaa/Car-game-js">Code</a>
+          </td>
+          <td>
+            <a href="https://car-game-js-eight.vercel.app/">Host</a>
+          </td>
         </tr>
       </tbody>
     </table>
